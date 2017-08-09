@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >  
+  
+<hibernate-mapping package="com.ynwi.ssh.beans">  
+    <class name="Movie" table="film">  
+        <id name="id" column="film_id">  
+            <generator class="native"></generator>  
+        </id>  
+        <property name="title" column="title" type="java.lang.String"  
+            not-null="true" ></property>  
+        <property name="releaseYear" column="release_year" type="java.lang.Integer" />  
+        <property name="createdPlace" column="release_place" type="java.lang.String" /> 
+          <property name="doubanId" column="douban_id" type="java.lang.Integer" /> 
+           <property name="length" column="length" type="java.lang.Integer" /> 
+            <property name="type" column="type_id" type="java.lang.Integer" /> 
+    </class>  
+</hibernate-mapping>  
